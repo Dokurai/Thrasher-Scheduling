@@ -60,7 +60,6 @@ public class DefaultFrame extends JFrame implements ActionListener
 		//=================================================
 		table.setColumnModel(colModel);
 		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-		cp.setLayout(new BorderLayout());
 		header=table.getTableHeader();
 		table.setPreferredScrollableViewportSize(new Dimension(500, 70));
         table.setFillsViewportHeight(true);
