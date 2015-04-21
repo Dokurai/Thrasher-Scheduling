@@ -96,7 +96,6 @@ public class UserFrame extends JFrame
 		panelArray[6].add(myLabel);
 		myLabel=new JLabel("Sunday");
 		panelArray[7].add(myLabel);
-		
 	}
 	void setupMainFrame()
 	{
@@ -108,7 +107,7 @@ public class UserFrame extends JFrame
 		setSize(d.width/1, d.height/4);
 		setLocation(d.width/500, d.height/3);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("ScheduleFrame");
+		setTitle("Schedule Frame");
 		setVisible(true);
 	}// end of setup
 }

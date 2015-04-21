@@ -47,7 +47,7 @@ public class LoginFrame extends JFrame
 	
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	
-		setTitle("LoginFrame");
+		setTitle("Login Frame");
 		setVisible(true);
 	}// end of setup
 }

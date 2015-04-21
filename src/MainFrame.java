@@ -1,4 +1,3 @@
-import java.io.*;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
@@ -14,6 +13,7 @@ public class MainFrame
 
 	LoginFrame myLogin;
 	UserFrame myUser;
+	AddEmployeeFrame myEmployeeFrame;
 	public static void main(String[] args) 
 	{
 		new MainFrame();// TODO Auto-generated method stub
@@ -23,6 +23,7 @@ public class MainFrame
 	{
 		myUser=new UserFrame();
 		myLogin=new LoginFrame();
+		myEmployeeFrame=new AddEmployeeFrame();
 	}
 
 }
