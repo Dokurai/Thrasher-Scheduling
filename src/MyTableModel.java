@@ -27,7 +27,7 @@ public class MyTableModel extends AbstractTableModel implements TableModel
 	@Override
 	public int getRowCount()
 	{
-		return 3;
+		return nameModel.getSize();
 	}
 	@Override
 	public int getColumnCount()

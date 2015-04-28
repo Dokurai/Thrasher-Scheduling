@@ -13,8 +13,9 @@ public class MainFrame
 
 	LoginFrame myLogin;
 	UserFrame myUser;
-	AddEmployeeFrame myEmployeeFrame;
+	
 	AddPositionFrame myPositionFrame;
+	AddJobFrame myJobFrame;
 	public static void main(String[] args) 
 	{
 		new MainFrame();// TODO Auto-generated method stub
@@ -22,10 +23,11 @@ public class MainFrame
 	
 	MainFrame()
 	{
+		System.out.println("Hey");
 		myUser=new UserFrame();
 		myLogin=new LoginFrame();
-		myEmployeeFrame=new AddEmployeeFrame();
 		myPositionFrame=new AddPositionFrame();
+		myJobFrame=new AddJobFrame();
 	}
 
 }

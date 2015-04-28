@@ -22,6 +22,9 @@ public class LoginFrame extends JFrame
 		passwordField=new JTextField(15);
 		closeButton=new JButton("CLOSE");
 		okButton=new JButton("OK");
+		
+		setResizable(false);
+		
 		fieldPanel=new JPanel(new GridLayout(3,2));
 		fieldPanel.add(nameLabel);
 		fieldPanel.add(nameField);
@@ -29,10 +32,13 @@ public class LoginFrame extends JFrame
 		fieldPanel.add(passwordField);
 		fieldPanel.add(closeButton);
 		fieldPanel.add(okButton);
+		
 		bottomPanel=new JPanel();
 		bottomPanel.add(fieldPanel);
+		
 		cp=getContentPane();
 		cp.add(bottomPanel);
+		
 		setupMainFrame();
 	}
 	void setupMainFrame()
@@ -45,7 +51,7 @@ public class LoginFrame extends JFrame
 		setSize(d.width/4, d.height/8);
 		setLocation(d.width/3, d.height/3);
 	
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	
 		setTitle("Login Frame");
 		setVisible(true);

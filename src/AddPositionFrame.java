@@ -30,7 +30,7 @@ public class AddPositionFrame extends JFrame implements ActionListener
 		myRadioButton=new Vector<JRadioButton>();
 		myRadioButton.add(new JRadioButton("Supervisor"));
 		myRadioButton.add(new JRadioButton("Project Manager"));
-		myRadioButton.add(new JRadioButton("<Temp Job Name"));
+		myRadioButton.add(new JRadioButton("<Temp Job Name>"));
 		
 		nextButton=new JButton("Next");
 		newButton=new JButton("New Job Title");
@@ -71,7 +71,7 @@ public class AddPositionFrame extends JFrame implements ActionListener
 		setSize(d.width/3, d.height/8);
 		setLocation(d.width/3, d.height/3);
 	
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	
 		setTitle("Add Position Frame");
 		setVisible(true);

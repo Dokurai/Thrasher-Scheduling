@@ -1,0 +1,8 @@
+To Do List:
+1.Set newJobName on OK to go back to addJobFrame and check and see if the job name already exists, if not then add to list
+2.On new job added proceed to basically next button
+3.LoginFrame check user pass
+4. Fix table/calendar view
+5. Add Employees to list from database
+6.Load Database.
+7. Port to web

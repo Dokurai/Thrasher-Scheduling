@@ -41,6 +41,7 @@ public class UserFrame extends JFrame
 		setDays();
 		setupTable();
 		cp.add(panelArray[0]);
+		
 		setupMainFrame();
 	}
 	void setupTable()
@@ -50,7 +51,7 @@ public class UserFrame extends JFrame
 		myFont=new Font("Arial", Font.PLAIN, 16);
 		table.setFont(myFont);
 		table.setMinimumSize(new Dimension(10,10));
-		myScrollPane=new JScrollPane(table);
+		
 		//================================================
 		colModel=new DefaultTableColumnModel();
 		column=new TableColumn(0);
@@ -77,7 +78,13 @@ public class UserFrame extends JFrame
 		table.setPreferredScrollableViewportSize(new Dimension(1000, 100));
         table.setFillsViewportHeight(true);
         panelArray[1].add(header);
+     
+        myTableModel.nameModel.addElement("John Doe");
+        myTableModel.positionModel.addElement("Supervisor");
+        myTableModel.dayModel.addElement("MWF");
+        myScrollPane=new JScrollPane(table);
         panelArray[1].add(myScrollPane);
+        
 	}
 	
 	void setDays()
